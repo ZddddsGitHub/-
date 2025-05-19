@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直播间 - 直播带货平台</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>直播带货平台</h1>
+        <nav>
+            <a href="/">首页</a>
+            <a href="/cart">购物车</a>
+            <a href="#" id="logoutBtn">退出</a>
+            <span id="usernameDisplay"></span>
+        </nav>
+    </header>
+    
+    <main class="live-container">
+        <div class="video-container">
+            <video controls autoplay>
+                <source src="/videos/sample.mp4" type="video/mp4">
+                您的浏览器不支持视频播放
+            </video>
+        </div>
+        
+        <div class="chat-container">
+            <h3>直播聊天室</h3>
+            <div class="chat-messages" id="chatMessages">
+                <!-- 聊天消息将通过JS动态加载 -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="输入聊天内容...">
+                <button id="sendMessageBtn" class="btn">发送</button>
+            </div>
+        </div>
+        
+        <div class="live-products">
+            <h3>直播推荐商品</h3>
+            <div id="liveProducts" class="live-products-grid">
+                <!-- 直播商品将通过JS动态加载 -->
+            </div>
+        </div>
+    </main>
+    
+    <script src="/js/main.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

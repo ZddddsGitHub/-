@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直播带货平台</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>直播带货平台</h1>
+        <nav>
+            <a href="/">首页</a>
+            <a href="/cart">购物车</a>
+            <a href="#" id="logoutBtn">退出</a>
+            <span id="usernameDisplay"></span>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="live-stream">
+            <h1>正在直播</h1>
+            <div class="stream-card" onclick="window.location.href='/live/1'">
+                <img src="/images/live_cover.jpg" alt="直播封面">
+                <h3>每日爆款专场</h3>
+                <p>主播: XXXXXX</p>
+                <p>观看人数: 10万+</p>
+            </div>
+        </section>
+        
+        <section class="products">
+            <h2>推荐商品</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- 商品将通过JS动态加载 -->
+            </div>
+        </section>
+    </main>
+    
+    <script src="/js/main.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>
+
